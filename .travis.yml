@@ -1,4 +1,3 @@
-sudo: required
 language: generic
 services:
   - docker
@@ -15,7 +14,7 @@ deploy:
   app: "frontend"
   env: "Frontend-env"
   bucket_name: "elasticbeanstalk-ca-central-1-547174721712"
-  bucket_path: "frontend"
+  # bucket_path: "frontend"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
